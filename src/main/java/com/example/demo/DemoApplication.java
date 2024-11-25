@@ -14,14 +14,15 @@ import java.util.List;
 
 
 @SpringBootApplication
-@RestController
+/*@RestController*/
 public class DemoApplication {
-    @Autowired
+    /*@Autowired
     ServiceClient SCL;
-
+*/
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
+    /*
     @GetMapping("/clients")
     public List<Client> getList() {
         return SCL.getClientList();
@@ -45,6 +46,6 @@ public class DemoApplication {
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-    }
+    }*/
 
 }
